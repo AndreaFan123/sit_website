@@ -1,0 +1,57 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: mcr.microsoft.com/playwright:v1.29.1-focal
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          name: Setup
+          caches:
+            - node
+            - dot-svelte-kit
+            - pnpm
+          script:
+            - curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@7
+            - pnpm install
+      - step:
+          name: Build
+          script:
+            - npm run build
+          caches:
+            - node
+            - dot-svelte-kit
+            - pnpm
+      - step:
+          name: Code linting
+          script:
+            - npm run lint
+          caches:
+            - node
+            - dot-svelte-kit
+            - pnpm
+      - parallel:
+          - step:
+              name: Unit test
+              script:
+                - npm run test:unit
+              caches:
+                - node
+                - dot-svelte-kit
+                - pnpm
+          - step:
+              name: E2E Test
+              script:
+                - npm run test
+              caches:
+                - node
+                - dot-svelte-kit
+                - pnpm
+
+definitions:
+  caches:
+    dot-svelte-kit: .svelte-kit
+    pnpm: $BITBUCKET_CLONE_DIR/.pnpm-store
