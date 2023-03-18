@@ -1,5 +1,6 @@
 <script>
   import sit_logo from '$lib/assets/sit_logo.png';
+  import Icon from "@iconify/svelte";
   import { page } from '$app/stores';
   
   $: routeId = $page.route.id;
@@ -26,17 +27,23 @@
       url: "/contact"
     },
   ]
+
+  let isMobileMenuOpen = false;
+  const toggleMobileMenu = () => {
+    isMobileMenuOpen = !isMobileMenuOpen;
+  }
 </script>
 
 <header class="header-wrapper" role="navigation">
   <div class="header-container">
     <div class="header-logoText">
+      <div class="header-logoImg">
+      <img src={sit_logo} alt="S.I.T Tech" />
+      </div>
       <a href="/">喜德科技有限公司 | S.I.T. Technology</a>
     </div>
-    <div class="header-logoImg">
-      <img src={sit_logo} alt="S.I.T Tech" />
-    </div>
-    <nav class="header-nav-container" aria-label="desktop-navigation">
+    
+    <nav class:open={isMobileMenuOpen} aria-label="desktop-navigation">
       <ul>
         {#each navLists as { routeName, url }}
           <li>
@@ -45,6 +52,9 @@
         {/each}
       </ul>
     </nav>
+    <button class="header-mobile-menu" on:click={toggleMobileMenu}>
+      <Icon icon="material-symbols:menu-rounded" color="red" width="30" height="30"/>
+    </button>
   </div>
 </header>
 
@@ -57,11 +67,12 @@
   left: 0;
   position: relative;
   min-height: 60px;
-  border-bottom: 2px solid var(--brand-primary-red);;
+  border-bottom: 2px solid var(--brand-primary-red);
+  padding: 0 2rem;
 
   .header-container {
     margin: 0 auto;
-    /* padding: 1rem 2rem; */
+    padding: 0 rem;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -69,28 +80,58 @@
 
     /* Left: logo-text-link */
     .header-logoText {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      @media screen and (max-width:775px) {
+        display: none;
+      }
 
       a {
-        display: inline-block;
         &:hover {
           transition: all .3s ease-in-out;
           color: var(--brand-primary-red);
         }
       }
     }
-    /* Media Query */
-    @media screen and (min-width: 1200px) {
-      max-width: 1170px;
-    }
 
-    @media screen and (min-width: 992px) {
-      height: 80px;
+    .header-mobile-menu {
+      display: none;
+
+      @media screen and (max-width: 775px) {
+        display: block;
+        cursor: pointer;
+      
+      }
     }
   }
   
   /* Main-nav */
-  .header-nav-container {
+
+  nav {
+    display: block;
+    @media screen and (max-width: 700px) {
+      display: none;
+      &.open {
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 300px;
+        background-color: black;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+      }
+
+      ul {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: 1000;
+      }
+    }
+  
     ul {
       width: 100%;
       display: flex;
@@ -98,10 +139,7 @@
       gap: 1rem;
 
     li {
-      display: inline-block;
-      
       a {
-        display: inline-block;
         position: relative;
         font-weight: 800;
         padding: 5px 10px;  
