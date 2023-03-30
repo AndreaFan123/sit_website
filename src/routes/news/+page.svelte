@@ -47,39 +47,102 @@
 </script>
 
 <main>
-  <div class="news-wrapper">
+  <div class='news-wrapper'>
     <div class="news-title">
       <h1>NEWS Update</h1>
     </div>
-    <ul class="news-image-container">
+    <ul>
       {#each newsList as {title, imageUrl, logo, location, description}}
         <li id={title}>
-          <div class="imge-container">
+          <div class="news-imag-container">
             <img src={imageUrl} alt={title}/>
           </div>
-          <div class="image-description-container">
+          <div class="news-text-container">
             <div>
               <h2>{title}</h2>
               <p>{description}</p>
             </div>
-            <div class="image-text-container">
-              <div class="logo-container">
+            <div class='news-logo-container'>
+              <div >
                 <img src={logo} alt='sit logo'/>
               </div>
-              <span class="image-location">{location}</span>
+              <span>{location}</span>
             </div>
           </div>
         </li>
       {/each}
-    </ul>
-  </div>
+      </ul>
+    </div>
 </main>
 
 <style lang="scss">
-  .main {
+  main {
     width: 100%;
+    padding: 1rem;
+
+    .news-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .news-title {
+      color: var(--brand-primary-red);
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
   }
 
+ul li {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding-bottom: 3rem;
+  
+  .news-imag-container {
+    width: 400px;
+    
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 3px;
+    }
+  }
+}
+
+.news-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+
+  h2 {
+    font-size: 1.5rem;
+    color: var(--brand-primary-red);
+  }
+  p {
+    font-size: 1.1rem;
+    color: #fafafa;
+  }
+}
+
+.news-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fafafa;
+
+  img {
+    width: 40px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* 
   .news-wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -138,6 +201,6 @@
         }
       }
     }
-  }
+  } */
 
 </style>
