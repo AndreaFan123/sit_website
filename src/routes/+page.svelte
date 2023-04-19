@@ -12,11 +12,11 @@
     <div class="section-bg"></div>
     <div class="section-content-container">
       <div>
-        <h2>Diagnostics</h2>
+        <h1>Diagnostics</h1>
         <p>The key of the next technical revolution. Let us imagine that we can detect and narrow upcoming errors and damages, before they really happen. We use our trained AI machines to achieve this.</p>
         <h4>Human knowledge is needed. Industry 5.0!</h4>
       </div>
-      <div>
+      <div >
         <Icon icon="material-symbols:keyboard-arrow-down-rounded" color="#fe1359" width="44" height="44" />
       </div>
     </div>
@@ -34,7 +34,7 @@
       <span class="cube-2">
         <img src={cube_2} alt="diamond"/>
       </span>
-      <div>
+      <div class="arrow-icon">
         <Icon icon="material-symbols:keyboard-arrow-down-rounded" color="#fe1359" width="44" height="44" />
       </div>
     </div>
@@ -59,7 +59,7 @@
     position: relative;
 
     .section-bg {
-      background-image: url("../lib//assets/landing/landing-bg.png");
+      background-image: url("../lib/assets/landing/landing-bg.png");
       min-height: 90vh;
       background-position: center;
       background-repeat: no-repeat;
@@ -79,7 +79,7 @@
         padding: 2rem;
         text-align: center;
 
-        h2 {
+        h1,h2 {
           font-size: 5rem;
           color: var(--brand-primary-red);
           padding-bottom: 1rem;
@@ -97,16 +97,26 @@
         span {
           color: var(--brand-primary-red);
         }
-      }
 
-      @media screen and (max-width: 700px) {
-        .section-content-container {
-          div {
-            margin: 0;
-          }
+          @media screen and (max-width:400px) {
+            padding: 0;
+
+            h1, h2 {
+              font-size: 3.8rem;
+            }
+
+            p {
+              width: 90%;
+              margin-left: 1.2rem;
+            }
         }
       }
     }
+      @media screen and (maxi-width:400px) {
+    .arrow-icon.svg {
+      display: none;
+    }
+  }
   }
 
   .section-content-container.relative {
@@ -123,6 +133,42 @@
       top: 230px;
       right: 250px;
       z-index: -10;
+    }
+
+    @media screen and (max-width:1200px) {
+      .cube-1 {
+        top: 70px;
+        left: 100px;
+      }
+      .cube-2 {
+        top: 280px;
+        right: 90px; 
+      }
+
+      @media screen and (max-width:550px) {
+        .cube-1 {
+          width: 90px;
+          top: 90px;
+          left: 50px;
+        }
+        .cube-2 {
+          width: 90px;
+          top: 230px;
+          right: 50px;
+        }
+      }
+
+      @media screen and (max-width:390px)  {
+        .cube-1 {
+          top: 50px;
+          left: 20px;
+        }
+        .cube-2 {
+          top: 150px;
+          right: 20px;
+        }
+      }
+
     }
   }
 
@@ -166,6 +212,7 @@
       object-fit: contain;
     }
   }
+
 
 
 

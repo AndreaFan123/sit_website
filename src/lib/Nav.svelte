@@ -1,7 +1,9 @@
 <script>
   import sit_logo from '$lib/assets/sit_logo.png';
   import Icon from "@iconify/svelte";
+  
   import { page } from '$app/stores';
+  import { fade, fly } from 'svelte/transition';
   
   $: routeId = $page.route.id;
 
@@ -28,9 +30,13 @@
     },
   ]
 
+  // Transition for mobile navbar
+  let visible = true;
   let isMobileMenuOpen = false;
+
   const toggleMobileMenu = () => {
     isMobileMenuOpen = !isMobileMenuOpen;
+    visible = !visible;
   }
 </script>
 
@@ -42,7 +48,6 @@
       </div>
       <a href="/">喜德科技有限公司 | S.I.T. Technology</a>
     </div>
-    
     <nav class:open={isMobileMenuOpen} aria-label="desktop-navigation">
       <ul>
         {#each navLists as { routeName, url }}
@@ -117,7 +122,7 @@
         display: block;
         position: absolute;
         width: 50%;
-        height: 300px;
+        height: 400px;
         background-color: black;
         top: 100%;
         right: 0;
@@ -126,9 +131,10 @@
 
       ul {
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        z-index: 1000;
+        align-items:center;
+        z-index: 100;
+        font-size: 1.5rem;
+        padding: 2rem 0;
       }
     }
   

@@ -89,7 +89,7 @@
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-          gap: 9rem;
+          gap: 7rem;
 
           h3 {
             /* color: var(--brand-primary-light);  */
@@ -103,6 +103,11 @@
             -webkit-text-fill-color: transparent;
           }
         }
+        @media screen and (max-width: 995px) {
+        div {
+          gap: 4rem;
+        }
+      }
       }
     }
   }

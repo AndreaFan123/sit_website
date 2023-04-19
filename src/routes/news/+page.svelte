@@ -53,7 +53,7 @@
     </div>
     <ul>
       {#each newsList as {title, imageUrl, logo, location, description}}
-        <li id={title}>
+        <li id={title} >
           <div class="news-imag-container">
             <img src={imageUrl} alt={title}/>
           </div>
@@ -78,7 +78,6 @@
 <style lang="scss">
   main {
     width: 100%;
-    padding: 1rem;
 
     .news-wrapper {
       max-width: 1200px;
@@ -92,26 +91,34 @@
       margin-top: 3rem;
       margin-bottom: 5rem;
     }
-  }
 
-ul li {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  padding-bottom: 3rem;
-  
-  .news-imag-container {
-    width: 400px;
-    
-
-    img {
-      max-width: 100%;
-      height: auto;
-      object-fit: contain;
-      border-radius: 3px;
+    li {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      padding-bottom: 3.5rem;
+      @media screen and (max-width: 585px) {
+        flex-direction: column;   
+        align-items: center;
+        gap: 1rem;
     }
   }
+   .news-imag-container {
+        width: 400px;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          border-radius: 3px;
+      }
+
+      @media screen and (max-width: 585px) {
+        width: 90%;
+      }
+    }
 }
+
+
 
 .news-text-container {
   display: flex;
@@ -127,6 +134,13 @@ ul li {
     font-size: 1.1rem;
     color: #fafafa;
   }
+
+  @media screen and (max-width: 585px) {
+    width: 90%;
+    p {
+      padding-bottom: 1.5rem;
+    }
+  }
 }
 
 .news-logo-container {
@@ -141,66 +155,4 @@ ul li {
     height: auto;
   }
 }
-
-/* 
-  .news-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-
-    .news-title {
-      text-align: center;
-      font-size: 1.5rem;
-      color: var(--brand-primary-red);
-      padding: 2rem 0;
-    }
-  }
-
-  .news-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 0 1rem;
-
-    li {
-      width: 50%;
-      display: flex;
-      gap: 2rem;
-
-    }
-  }
-
-  .imge-container {
-    width: 400px;
-
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      object-fit: contain;
-    }
-  }
-
-  .image-description-container {
-    color: #fafafa;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    .image-text-container{
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-
-      .logo-container {
-        width: 30px;
-        
-        img {
-          width: 100%;
-        }
-      }
-    }
-  } */
-
 </style>

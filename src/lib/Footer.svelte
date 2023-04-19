@@ -33,17 +33,17 @@
   </ul>
     <ul>
     <li>
-      <a href="#">
+      <a href="#" target="_blank">
         <img src={ig} alt="SIT instagram"/>
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="https://www.linkedin.com/company/sit-technology" target="_blank" rel="noreferrer">
         <img src={linkedin} alt="SIT Linkedin"/>
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="https://www.youtube.com/@SitTechnology" target="_blank" rel="noreferrer">
         <img src={yt} alt="SIT Youtube"/>
       </a>
     </li>
@@ -95,7 +95,7 @@
       }
     }
     .footer-contact {
-       a {
+      a {
           padding: 5px 10px;
           font-weight: 800;
           border: 3px solid var(--brand-primary-red) ; 
@@ -107,8 +107,27 @@
         &:focus {
         outline: none;
         box-shadow: 0 0 0 3px var(--brand-primary-red);
+        }
       }
-       }
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem 0;
+
+      .footer-logo {
+        align-items: center;
+      }
+      .footer-list {
+        flex-direction: column;
+        gap: 2rem;
+        ul {
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+      }
     }
   }
 </style>
