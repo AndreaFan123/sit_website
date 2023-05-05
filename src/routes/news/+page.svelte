@@ -47,11 +47,11 @@
 </script>
 
 <main>
-  <div class='news-wrapper'>
-    <div class="news-title">
-      <h1>NEWS Update</h1>
-    </div>
-    <ul>
+ 
+    <ul class='news-wrapper'>
+      <div class="news-title">
+        <h1>NEWS Update</h1>
+      </div>
       {#each newsList as {title, imageUrl, logo, location, description}}
         <li id={title} >
           <div class="news-imag-container">
@@ -72,7 +72,6 @@
         </li>
       {/each}
       </ul>
-    </div>
 </main>
 
 <style lang="scss">
@@ -80,16 +79,15 @@
     width: 100%;
 
     .news-wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
+      position: relative;
+      padding-top: 5rem;
     }
 
     .news-title {
       color: var(--brand-primary-red);
       font-size: 1.5rem;
       text-align: center;
-      margin-top: 3rem;
-      margin-bottom: 5rem;
+      margin: 4rem 0;
     }
 
     li {
@@ -103,7 +101,7 @@
         gap: 1rem;
     }
   }
-   .news-imag-container {
+  .news-imag-container {
         width: 400px;
         img {
           width: 100%;

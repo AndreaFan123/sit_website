@@ -30,6 +30,7 @@ Taipei, 11503,Taiwan, R.O.C</p>
   .contact-container {
     width: 100%;
     position: relative;
+    
 
     .contact-bg {
       background-image: url("../../lib/assets/contact/contact_map.png");
@@ -61,18 +62,20 @@ Taipei, 11503,Taiwan, R.O.C</p>
       }
 
       @media screen and (max-width: 950px) {
-        top: 10%;
+        top: 20%;
         width: 60%;
       }
 
       @media screen and (max-width: 530px) {
         width: 80%;
         padding: 1.5rem;
+         z-index: 0;
       }
 
       @media screen and (max-width: 390px) {
         width: 80%;
         padding: 1rem;
+        z-index: 0;
 
         h1 {
           font-size: 2.5rem;

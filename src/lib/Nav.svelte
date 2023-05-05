@@ -31,12 +31,12 @@
   ]
 
   // Transition for mobile navbar
-  let visible = true;
+  // let visible = true;
   let isMobileMenuOpen = false;
 
   const toggleMobileMenu = () => {
     isMobileMenuOpen = !isMobileMenuOpen;
-    visible = !visible;
+    // visible = !visible;
   }
 </script>
 
@@ -49,6 +49,7 @@
       <a href="/">喜德科技有限公司 | S.I.T. Technology</a>
     </div>
     <nav class:open={isMobileMenuOpen} aria-label="desktop-navigation">
+      <!-- <nav> -->
       <ul>
         {#each navLists as { routeName, url }}
           <li>
@@ -74,6 +75,8 @@
   min-height: 60px;
   border-bottom: 2px solid var(--brand-primary-red);
   padding: 0 2rem;
+  position: fixed;
+  background-color: black;
 
   .header-container {
     margin: 0 auto;
@@ -89,8 +92,10 @@
       align-items: center;
       gap: 1rem;
 
-      @media screen and (max-width:775px) {
-        display: none;
+      @media screen and (max-width:600px) {
+        a {
+          display: none;
+        }
       }
 
       a {
@@ -104,7 +109,7 @@
     .header-mobile-menu {
       display: none;
 
-      @media screen and (max-width: 775px) {
+      @media screen and (max-width: 700px) {
         display: block;
         cursor: pointer;
       
@@ -181,9 +186,9 @@
       }
 
       /* Media Query */
-      @media screen and (min-width: 992px)  {
+      /* @media screen and (min-width: 992px)  {
         display: inline-flex;
-      }
+      } */
     }
   }
 }

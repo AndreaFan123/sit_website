@@ -57,6 +57,7 @@
   .section-container {
     width: 100%;
     position: relative;
+    padding-top: 5rem;
 
     .section-bg {
       background-image: url("../lib/assets/landing/landing-bg.png");
@@ -82,6 +83,7 @@
         h1,h2 {
           font-size: 5rem;
           color: var(--brand-primary-red);
+          padding-top: 4rem;
           padding-bottom: 1rem;
         }
         p {
@@ -103,6 +105,7 @@
 
             h1, h2 {
               font-size: 3.8rem;
+              /* padding-top: 3rem; */
             }
 
             p {
@@ -205,11 +208,15 @@
       }
   }
   .section-content-chart {
-    width: 70%;
+    width: 50%;
     /* height: 700px; */
     img {
       width: 100%;
       object-fit: contain;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 80%;
     }
   }
 

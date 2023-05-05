@@ -69,15 +69,14 @@
       text-align: center;
     }
     .team-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      color: white;
-      padding: 1.5rem;
+      position: relative;
+      padding-top: 5rem;
 
       ul {
         text-align: center;
         margin-top: 2.5rem;
         margin-bottom: 4rem;
+        color: #fff;
 
         h2 {
           margin: 1rem 0;

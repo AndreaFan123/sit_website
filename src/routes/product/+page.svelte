@@ -9,7 +9,7 @@
 </script>
 
 <main>
-  <div> 
+  <div class="product-section-wrapper">
   <section class="product-title-container">
     <h1>
       Unlocking Accurate Forecasting
@@ -42,7 +42,7 @@ Careful Selection of Training Methods and Data Sets</p>
       <div class="product-telematics-content">
         <h4>A small computer</h4>
         <p>Software as well as Hardware is designed in-house by our own engineers.</p>
-      <div class="product-img-container">
+      <div>
         <img src={telematicsImg1} alt='small computer designed in-house by our team'/>
       </div>
       </div>
@@ -74,15 +74,16 @@ Careful Selection of Training Methods and Data Sets</p>
         </div>
       </article>
   </section>
-  
-
+</div>
 </main>
 
 <style lang="scss">
   main {
     width: 100%;
-    div {
+    .product-section-wrapper {
       max-width: 1200px;
+      position: relative;
+      padding-top: 5rem;
       margin: 0 auto;
     }
   }
@@ -172,7 +173,7 @@ Careful Selection of Training Methods and Data Sets</p>
         font-size: 1.5rem;
         padding: 1rem;
       }
-
+      
       img  {
         width: 90%;
       }
@@ -205,6 +206,7 @@ Careful Selection of Training Methods and Data Sets</p>
       align-items: center;
       justify-content: space-around;
       margin: 4rem 0;
+      gap: 2rem;
 
       div {
         display: flex;

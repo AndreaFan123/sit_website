@@ -22,6 +22,9 @@
   <div class="footer-list">
   <ul>
     <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
       <a href="/product">Product</a>
     </li>
     <li>
@@ -29,6 +32,9 @@
     </li>
     <li>
       <a href="/team">Team</a>
+    </li>
+    <li>
+      <a href="/contact">Contact</a>
     </li>
   </ul>
     <ul>
