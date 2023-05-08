@@ -89,15 +89,13 @@
 
     .footer-wrapper {
       max-width: 1100px;
-      min-height: 300px;
+      min-height: 250px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      /* gap: 2rem; */
       padding: 2rem;
-
       .footer-social-container {
         ul {
           display: flex;
@@ -131,6 +129,7 @@
       width: 100%;
       ul {
         display: flex;
+        justify-content: center;
         gap: 2rem;
         li a {
           transition: transform 750ms;
