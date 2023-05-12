@@ -75,8 +75,9 @@
           <span>喜德科技有限公司 | S.I.T Technology</span>
         </div>
       </div>
-      <div>
+      <div class="copyright-privacy">
         <p>&copy; 2023 S.I.T Industry</p>
+        <a href="/privacy-statement">Privacy</a>
       </div>
     </div>
   </div>
@@ -136,7 +137,7 @@
           will-change: transform;
           &:hover,
           &:focus {
-            color: #fe1359;
+            color: var(--brand-primary-red);
             transform: translateY(-10px);
           }
         }
@@ -161,6 +162,17 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+      }
+
+      .copyright-privacy {
+          display: flex;
+          gap: 1rem;
+
+          a {
+            &:hover {
+              color:var(--brand-primary-red);
+            }
+          }
       }
     }
 
