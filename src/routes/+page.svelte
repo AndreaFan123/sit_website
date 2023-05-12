@@ -12,7 +12,8 @@
     <!-- Diagnostics section -->
     <div class="home-bg" />
     <section class="home-diagnostics-container">
-      <div class="home-diagnostics-content">
+      <div class="home-diagnostics-content-container">
+        <div class="home-content">
         <h1>Diagnostics</h1>
         <h3>Human knowledge is needed. Industry 5.0!</h3>
         <p>
@@ -20,6 +21,7 @@
           upcoming errors and damages, before they really happen. We use our trained AI machines to
           achieve this.
         </p>
+        </div>
         <ArrowIcon />
       </div>
     </section>
@@ -98,6 +100,9 @@
 </main>
 
 <style lang="scss">
+  main {
+    width: 100%;
+  }
   .home-wrapper {
     width: 100%;
     position: relative;
@@ -121,14 +126,14 @@
       flex-direction: column;
       margin-top: 4rem;
 
-      .home-diagnostics-content {
+      .home-diagnostics-content-container {
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 0;
 
         h1 {
           font-size: 5rem;
@@ -146,6 +151,12 @@
           font-size: 1.5rem;
           
         }
+
+        @media screen and (max-width:400px) {
+            h1 {
+              font-size: 4rem;
+            }
+          }
       }
     }
 
@@ -191,6 +202,28 @@
           right: 130px;
           z-index: -10;
         }
+
+        @media screen and (max-width: 400px) {
+          h2 {
+            font-size: 3rem;
+          }
+
+          h3 {
+            font-size: 1.8rem;
+          }
+
+          .cube-1 {
+            top: 30x;
+          left: 30px;
+          width:100px;
+          }
+
+          .cube-2 {
+            top: 520px;
+            right: 50px;
+            width: 100px;
+          }
+        }
       }
     }
 
@@ -223,6 +256,10 @@
         h3 {
           font-size: 2rem;
           color: var(--brand-primary-red);
+
+          @media screen and (max-width: 400px) {
+            font-size: 1.7rem;
+          }
         }
       }
 
@@ -231,6 +268,15 @@
         height: 500px;
         flex: 1;
         padding: 1rem;
+      }
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+
+      .home-chart {
+        width: auto;
+        height: auto;
       }
     }
 
@@ -244,14 +290,23 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 3rem 0;
 
         h2 {
           font-size: 4rem;
           color: var(--brand-primary-red);
+
+          @media screen and (max-width:700px) {
+          text-align: center;
+        }
+
+        @media screen and (max-width:400px) {
+          font-size: 3rem;
+        }
         }
 
         .home-partner-logo-container {
-          padding: 3rem;
+          padding: 3rem 0;
           display: flex;
           align-items: center;
 
@@ -266,7 +321,12 @@
               max-width: 100%;
             }
           }
+
+          @media screen and (max-width: 700px) {
+            flex-direction: column;
+          }
         }
+        
       }
     }
   }
