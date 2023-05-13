@@ -8,6 +8,15 @@
   import forecastImg1 from '../../lib/assets/product/product-image-3.png';
 </script>
 
+<svelte:head>
+  <title>Our Product</title>
+  <meta name="description" content="Our Product" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="S.I.T. Technologies Co., Ltd." property="og:site_name">
+
+</svelte:head>
+
 <main>
   <div class="product-section-wrapper">
   <section class="product-title-container">

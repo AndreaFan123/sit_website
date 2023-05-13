@@ -29,6 +29,15 @@
   ]
 </script>
 
+<svelte:head>
+  <title>Our Team</title>
+  <meta name="description" content="Our Team" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="S.I.T. Technologies Co., Ltd." property="og:site_name" />
+  
+</svelte:head>
+
 <main>
   <div class="team-container">
     <ul>

@@ -1,6 +1,15 @@
 <script>
   // import contact_map from '../../lib/assets/contact/contact_map.png';
 </script>
+
+<svelte:head>
+  <title>Contact Us</title>
+  <meta name="description" content="Contact us for more information about our products and services.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="S.I.T. Technologies Co., Ltd." property="og:site_name">
+</svelte:head>
+
 <main>
   <section class="contact-container">
     <div class="contact-bg"></div>

@@ -1,3 +1,12 @@
+<svelte:head>
+  <title>Privacy & pulicy</title>
+  <meta name="description" content="Privacy & pulicy" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="S.I.T. Technologies Co., Ltd." property="og:site_name" />
+  
+</svelte:head>
+
 <main>
   <article>
     <div class="privacy-content-container">

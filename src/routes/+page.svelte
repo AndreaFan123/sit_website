@@ -7,6 +7,14 @@
   import fcLogo from '../lib/assets/landing/landing_fc_university.png';
 </script>
 
+<svelte:head>
+  <title>Welcome to SIT</title>
+  <meta name="description" content="Welcome to SIT" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="S.I.T. Technologies Co., Ltd." property="og:site_name" />
+</svelte:head>
+
 <main>
   <div class="home-wrapper">
     <!-- Diagnostics section -->
@@ -90,7 +98,7 @@
           <div class="home-partner-fc">
             <img
               src={fcLogo}
-              alt=""
+              alt="Feng Chia University Logo"
             />
           </div>
         </div>

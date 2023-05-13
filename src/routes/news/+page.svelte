@@ -46,6 +46,15 @@
   ]
 </script>
 
+<svelte:head>
+  <title>Latest Updates</title>
+  <meta name="description" content="Latest Updates" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="S.I.T. Technologies Co., Ltd." property="og:site_name" />
+
+</svelte:head>
+
 <main>
  
     <ul class='news-wrapper'>
