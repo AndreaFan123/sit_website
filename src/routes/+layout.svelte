@@ -5,5 +5,13 @@
 </script>
 
 <Nav />
-<slot />
+<div class="site-container">
+  <slot />
+</div>
 <Footer />
+
+<style>
+  .site-container {
+    padding-top: 80px;
+  }
+</style>

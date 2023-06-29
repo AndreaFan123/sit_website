@@ -5,43 +5,50 @@
   import image_3 from '../../lib/assets/news/image-3.jpg';
   import image_4 from '../../lib/assets/news/image-4.jpg';
   import image_5 from '../../lib/assets/news/image-5.jpg';
+  import image_7 from '../../lib/assets/news/image-7.jpg';
 
 
   const newsList = [
+    {
+      title: "COMPUTEX 2023 in Taiwan",
+      imageUrl: image_7,
+      logo:sit_logo,
+      location:'Taipei, Taiwan',
+    },
     { 
       title: "Meet Taipei, Exhibition 2018.",
       imageUrl: image_4,
       logo: sit_logo,
       location: 'Taipei, Taiwan',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+      
     },
     { 
       title: "#1 APTG 5G  Accelerator Program.",
       imageUrl: image_5,
       logo: sit_logo,
       location: 'Taipei, Taiwan',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+      
     },
     {
       title: "Visit at Feng Chia University Laboratory.",
       imageUrl: image_3,
       logo: sit_logo,
       location: 'Nuremberg, Germany',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+      
     },
     {
       title: "Intro Video preparation at a Car Garage.",
       imageUrl: image_2,
       logo: sit_logo,
       location: 'Nuremberg, Germany',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+      
     },
     {
       title: "Visit IG Car Office.",
       imageUrl: image_1,
       logo: sit_logo,
       location: 'Taipei, Taiwan',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+      
     }
   ]
 </script>
@@ -61,16 +68,13 @@
       <div class="news-title">
         <h1>NEWS Update</h1>
       </div>
-      {#each newsList as {title, imageUrl, logo, location, description}}
+      {#each newsList as {title, imageUrl, logo, location}}
         <li id={title} >
           <div class="news-imag-container">
             <img src={imageUrl} alt={title}/>
           </div>
           <div class="news-text-container">
-            <div>
               <h2>{title}</h2>
-              <p>{description}</p>
-            </div>
             <div class='news-logo-container'>
               <div >
                 <img src={logo} alt='sit logo'/>
@@ -89,7 +93,6 @@
 
     .news-wrapper {
       position: relative;
-      padding-top: 5rem;
     }
 
     .news-title {
@@ -155,6 +158,7 @@
   align-items: center;
   gap: 1rem;
   color: #fafafa;
+  margin-top:1rem;
 
   img {
     width: 40px;

@@ -5,10 +5,11 @@
   import Chart from '../lib/assets/landing/landing-line-chart.png';
   import nvidaLogo from '../lib/assets/landing/landing_nvida_logo.png';
   import fcLogo from '../lib/assets/landing/landing_fc_university.png';
+  import { onMount } from 'svelte';
 </script>
 
 <svelte:head>
-  <title>Welcome to SIT</title>
+  <title>Welcome to SIT Industry</title>
   <meta name="description" content="Welcome to SIT" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -114,7 +115,7 @@
   .home-wrapper {
     width: 100%;
     position: relative;
-    padding-top: 5rem;
+    
 
     .home-bg {
       background-image: url('../lib/assets/landing/landing-bg.png');
@@ -147,6 +148,8 @@
           font-size: 5rem;
           color: var(--brand-primary-red);
           padding: 1rem 0;
+          
+          
         }
          h3 {
           font-size: 2rem;

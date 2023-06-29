@@ -1,0 +1,159 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/build/hooks.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_sit_logo.js",
+      "_Icon.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-073d0927.css"
+    ]
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_stores.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_Icon.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-f022d6f6.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/landing-diamond-1-7a624059.png",
+      "_app/immutable/assets/landing-diamond-2-4b7b3ad2.png",
+      "_app/immutable/assets/landing-line-chart-3834afcc.png",
+      "_app/immutable/assets/landing_nvida_logo-31623f5c.png",
+      "_app/immutable/assets/landing_fc_university-893550a3.png",
+      "_app/immutable/assets/landing-bg-9ca58121.png"
+    ]
+  },
+  "src/routes/contact/+page.svelte": {
+    "file": "entries/pages/contact/_page.svelte.js",
+    "src": "src/routes/contact/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-3a6947cd.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/contact_map-fb44bd5a.png"
+    ]
+  },
+  "src/routes/news/+page.svelte": {
+    "file": "entries/pages/news/_page.svelte.js",
+    "src": "src/routes/news/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_sit_logo.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-18d05a30.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/image-1-1ba3a4f3.jpg",
+      "_app/immutable/assets/image-2-abb37054.jpg",
+      "_app/immutable/assets/image-3-4db6481d.jpg",
+      "_app/immutable/assets/image-4-972e4c21.jpg",
+      "_app/immutable/assets/image-5-15afb00f.jpg"
+    ]
+  },
+  "src/routes/privacy-statement/+page.svelte": {
+    "file": "entries/pages/privacy-statement/_page.svelte.js",
+    "src": "src/routes/privacy-statement/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-29394a41.css"
+    ]
+  },
+  "src/routes/product/+page.svelte": {
+    "file": "entries/pages/product/_page.svelte.js",
+    "src": "src/routes/product/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_Icon.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-47521857.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/product-data-c943bbb1.png",
+      "_app/immutable/assets/product-title-blue-60e6630b.png",
+      "_app/immutable/assets/product-title-yellow-a8f41c7b.png",
+      "_app/immutable/assets/product-image-1-2797b661.png",
+      "_app/immutable/assets/product-image-2-f431d2fc.png",
+      "_app/immutable/assets/product-image-3-a3166aef.png"
+    ]
+  },
+  "src/routes/team/+page.svelte": {
+    "file": "entries/pages/team/_page.svelte.js",
+    "src": "src/routes/team/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-b72444c6.css"
+    ]
+  },
+  ".svelte-kit/build/hooks.js": {
+    "file": "chunks/hooks.js",
+    "src": ".svelte-kit/build/hooks.js",
+    "isDynamicEntry": true
+  },
+  "_index.js": {
+    "file": "chunks/index.js"
+  },
+  "_sit_logo.js": {
+    "file": "chunks/sit_logo.js"
+  },
+  "_Icon.js": {
+    "file": "chunks/Icon.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "imports": [
+      "_index.js"
+    ]
+  }
+}
