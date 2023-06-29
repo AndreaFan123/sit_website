@@ -15,10 +15,6 @@
   ]
   const coProductOwnerList = [
     {
-      displayName:"Salhi Heythem",
-      title: "Embedded & Technology"
-    },
-    {
       displayName:"Yi Cheng Lu",
       title: "Data & Technology"
     },
@@ -79,8 +75,6 @@
     }
     .team-container {
       position: relative;
-      padding-top: 5rem;
-
       ul {
         text-align: center;
         margin-top: 2.5rem;

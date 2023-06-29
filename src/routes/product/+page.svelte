@@ -92,7 +92,6 @@ Careful Selection of Training Methods and Data Sets</p>
     .product-section-wrapper {
       max-width: 1200px;
       position: relative;
-      padding-top: 5rem;
       margin: 0 auto;
     }
   }

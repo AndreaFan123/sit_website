@@ -9,6 +9,9 @@
 	"/news": [
 		"src/routes/+layout.ts"
 	],
+	"/privacy-statement": [
+		"src/routes/+layout.ts"
+	],
 	"/product": [
 		"src/routes/+layout.ts"
 	],

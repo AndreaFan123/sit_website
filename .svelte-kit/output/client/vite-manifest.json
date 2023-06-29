@@ -1,0 +1,340 @@
+{
+  "src/lib/assets/landing/landing-diamond-1.png": {
+    "file": "_app/immutable/assets/landing-diamond-1-7a624059.png",
+    "src": "src/lib/assets/landing/landing-diamond-1.png"
+  },
+  "src/lib/assets/landing/landing-diamond-2.png": {
+    "file": "_app/immutable/assets/landing-diamond-2-4b7b3ad2.png",
+    "src": "src/lib/assets/landing/landing-diamond-2.png"
+  },
+  "src/lib/assets/landing/landing-line-chart.png": {
+    "file": "_app/immutable/assets/landing-line-chart-3834afcc.png",
+    "src": "src/lib/assets/landing/landing-line-chart.png"
+  },
+  "src/lib/assets/landing/landing_nvida_logo.png": {
+    "file": "_app/immutable/assets/landing_nvida_logo-31623f5c.png",
+    "src": "src/lib/assets/landing/landing_nvida_logo.png"
+  },
+  "src/lib/assets/landing/landing_fc_university.png": {
+    "file": "_app/immutable/assets/landing_fc_university-893550a3.png",
+    "src": "src/lib/assets/landing/landing_fc_university.png"
+  },
+  "src/lib/assets/news/image-4.jpg": {
+    "file": "_app/immutable/assets/image-4-972e4c21.jpg",
+    "src": "src/lib/assets/news/image-4.jpg"
+  },
+  "src/lib/assets/news/image-5.jpg": {
+    "file": "_app/immutable/assets/image-5-15afb00f.jpg",
+    "src": "src/lib/assets/news/image-5.jpg"
+  },
+  "src/lib/assets/news/image-1.jpg": {
+    "file": "_app/immutable/assets/image-1-1ba3a4f3.jpg",
+    "src": "src/lib/assets/news/image-1.jpg"
+  },
+  "src/lib/assets/product/product-title-yellow.png": {
+    "file": "_app/immutable/assets/product-title-yellow-a8f41c7b.png",
+    "src": "src/lib/assets/product/product-title-yellow.png"
+  },
+  "src/lib/assets/product/product-data.png": {
+    "file": "_app/immutable/assets/product-data-c943bbb1.png",
+    "src": "src/lib/assets/product/product-data.png"
+  },
+  "src/lib/assets/product/product-image-1.png": {
+    "file": "_app/immutable/assets/product-image-1-2797b661.png",
+    "src": "src/lib/assets/product/product-image-1.png"
+  },
+  "src/lib/assets/product/product-title-blue.png": {
+    "file": "_app/immutable/assets/product-title-blue-60e6630b.png",
+    "src": "src/lib/assets/product/product-title-blue.png"
+  },
+  "src/lib/assets/product/product-image-2.png": {
+    "file": "_app/immutable/assets/product-image-2-f431d2fc.png",
+    "src": "src/lib/assets/product/product-image-2.png"
+  },
+  "src/lib/assets/product/product-image-3.png": {
+    "file": "_app/immutable/assets/product-image-3-a3166aef.png",
+    "src": "src/lib/assets/product/product-image-3.png"
+  },
+  "src/lib/assets/news/image-2.jpg": {
+    "file": "_app/immutable/assets/image-2-abb37054.jpg",
+    "src": "src/lib/assets/news/image-2.jpg"
+  },
+  "src/lib/assets/news/image-3.jpg": {
+    "file": "_app/immutable/assets/image-3-4db6481d.jpg",
+    "src": "src/lib/assets/news/image-3.jpg"
+  },
+  "src/lib/assets/landing/landing-bg.png": {
+    "file": "_app/immutable/assets/landing-bg-9ca58121.png",
+    "src": "src/lib/assets/landing/landing-bg.png"
+  },
+  "src/lib/assets/contact/contact_map.png": {
+    "file": "_app/immutable/assets/contact_map-fb44bd5a.png",
+    "src": "src/lib/assets/contact/contact_map.png"
+  },
+  "src/routes/contact/+page.css": {
+    "file": "_app/immutable/assets/_page-3b24112a.css",
+    "src": "src/routes/contact/+page.css"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-b78453e7.css",
+    "src": "src/routes/+layout.css"
+  },
+  "src/routes/team/+page.css": {
+    "file": "_app/immutable/assets/_page-8d2d2944.css",
+    "src": "src/routes/team/+page.css"
+  },
+  "src/routes/privacy-statement/+page.css": {
+    "file": "_app/immutable/assets/_page-bea1837a.css",
+    "src": "src/routes/privacy-statement/+page.css"
+  },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-b784015e.css",
+    "src": "src/routes/+page.css"
+  },
+  "src/routes/news/+page.css": {
+    "file": "_app/immutable/assets/_page-e9ac1ce0.css",
+    "src": "src/routes/news/+page.css"
+  },
+  "src/routes/product/+page.css": {
+    "file": "_app/immutable/assets/_page-dc704902.css",
+    "src": "src/routes/product/+page.css"
+  },
+  ".svelte-kit/generated/nodes/7.js": {
+    "file": "_app/immutable/chunks/7-9e00a728.js",
+    "src": ".svelte-kit/generated/nodes/7.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/team/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-f7d373ea.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/news/+page.svelte"
+    ]
+  },
+  "_sit_logo-b6a42b2b.js": {
+    "file": "_app/immutable/chunks/sit_logo-b6a42b2b.js"
+  },
+  "src/routes/+layout.ts": {
+    "file": "_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true,
+    "imports": [
+      "__layout-da46b06b.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-9a5c27c0.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/6.js": {
+    "file": "_app/immutable/chunks/6-2bb5d5e7.js",
+    "src": ".svelte-kit/generated/nodes/6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/product/+page.svelte"
+    ]
+  },
+  "_stores-834c3f72.js": {
+    "file": "_app/immutable/chunks/stores-834c3f72.js",
+    "imports": [
+      "_index-c274208b.js",
+      "_singletons-8a486bef.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-f7c33c4e.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/contact/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-61041dcf.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-da46b06b.js",
+      "src/routes/+layout.svelte"
+    ]
+  },
+  "__layout-da46b06b.js": {
+    "file": "_app/immutable/chunks/_layout-da46b06b.js"
+  },
+  "_singletons-8a486bef.js": {
+    "file": "_app/immutable/chunks/singletons-8a486bef.js",
+    "imports": [
+      "_index-c274208b.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-0f77900a.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/privacy-statement/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-73b0883c.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-e5a8f115.js",
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-c274208b.js",
+      "_stores-834c3f72.js"
+    ]
+  },
+  "src/routes/contact/+page.svelte": {
+    "file": "_app/immutable/components/pages/contact/_page.svelte-1c9b6db5.js",
+    "src": "src/routes/contact/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-c274208b.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-3b24112a.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/contact_map-fb44bd5a.png"
+    ]
+  },
+  "_index-c274208b.js": {
+    "file": "_app/immutable/chunks/index-c274208b.js"
+  },
+  "src/routes/team/+page.svelte": {
+    "file": "_app/immutable/components/pages/team/_page.svelte-05c515c7.js",
+    "src": "src/routes/team/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-c274208b.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-8d2d2944.css"
+    ]
+  },
+  "_Icon-583ae0a4.js": {
+    "file": "_app/immutable/chunks/Icon-583ae0a4.js",
+    "imports": [
+      "_index-c274208b.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-a4b1f6ff.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-c274208b.js",
+      "_Icon-583ae0a4.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-b784015e.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/landing-diamond-1-7a624059.png",
+      "_app/immutable/assets/landing-diamond-2-4b7b3ad2.png",
+      "_app/immutable/assets/landing-line-chart-3834afcc.png",
+      "_app/immutable/assets/landing_nvida_logo-31623f5c.png",
+      "_app/immutable/assets/landing_fc_university-893550a3.png",
+      "_app/immutable/assets/landing-bg-9ca58121.png"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-429a4602.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-c274208b.js",
+      "_sit_logo-b6a42b2b.js",
+      "_Icon-583ae0a4.js",
+      "_stores-834c3f72.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-b78453e7.css"
+    ]
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-2c6f3a6f.js",
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.3/node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-c274208b.js",
+      "_singletons-8a486bef.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js",
+      ".svelte-kit/generated/nodes/4.js",
+      ".svelte-kit/generated/nodes/5.js",
+      ".svelte-kit/generated/nodes/6.js",
+      ".svelte-kit/generated/nodes/7.js"
+    ]
+  },
+  "src/routes/news/+page.svelte": {
+    "file": "_app/immutable/components/pages/news/_page.svelte-25bf2c2e.js",
+    "src": "src/routes/news/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-c274208b.js",
+      "_sit_logo-b6a42b2b.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-e9ac1ce0.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/image-1-1ba3a4f3.jpg",
+      "_app/immutable/assets/image-2-abb37054.jpg",
+      "_app/immutable/assets/image-3-4db6481d.jpg",
+      "_app/immutable/assets/image-4-972e4c21.jpg",
+      "_app/immutable/assets/image-5-15afb00f.jpg"
+    ]
+  },
+  "src/routes/product/+page.svelte": {
+    "file": "_app/immutable/components/pages/product/_page.svelte-1a80e920.js",
+    "src": "src/routes/product/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-c274208b.js",
+      "_Icon-583ae0a4.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-dc704902.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/product-data-c943bbb1.png",
+      "_app/immutable/assets/product-title-blue-60e6630b.png",
+      "_app/immutable/assets/product-title-yellow-a8f41c7b.png",
+      "_app/immutable/assets/product-image-1-2797b661.png",
+      "_app/immutable/assets/product-image-2-f431d2fc.png",
+      "_app/immutable/assets/product-image-3-a3166aef.png"
+    ]
+  },
+  "src/routes/privacy-statement/+page.svelte": {
+    "file": "_app/immutable/components/pages/privacy-statement/_page.svelte-1ba4aeb3.js",
+    "src": "src/routes/privacy-statement/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-c274208b.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-bea1837a.css"
+    ]
+  }
+}
